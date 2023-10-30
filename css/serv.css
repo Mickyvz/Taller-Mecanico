@@ -1,0 +1,66 @@
+/* Importaciones */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --notificacion-background: #313e2c;
+  --notificacion-primary: #aaec8a;
+  --background: #faf9ff;
+  --main-color: #016dcb;
+  --text-color: #020102;
+  --bg-color: #fff;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  column-gap: 30px;
+}
+.form {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: var(--bg-color);
+}
+header {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+form {
+  margin-top: 30px;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid black;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.form-content a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 15px 10px;
+  }
+}
