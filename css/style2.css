@@ -7,9 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --notificacion-background: #313e2c;
+  /* --notificacion-background: #313e2c;
   --notificacion-primary: #aaec8a;
-  --background: #faf9ff;
+  --background: #faf9ff; */
+  --main-color: #0171d3;
+  --text-color: #020102;
+  --bg-color: #fff;
 }
 .container {
   height: 100vh;
@@ -17,21 +20,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4070f4;
+  background-color: var(--main-color);
   column-gap: 30px;
 }
 .form {
   position: absolute;
+  display: grid;
   max-width: 430px;
   width: 100%;
   padding: 30px;
   border-radius: 6px;
-  background: #fff;
+  background: var(--bg-color);
 }
 header {
   font-size: 28px;
   font-weight: 600;
-  color: #232836;
+  color: var(--text-color);
   text-align: center;
 }
 form {
@@ -73,13 +77,13 @@ form {
 }
 
 .field button {
-  color: #fff;
-  background-color: #0171d3;
+  color: var(--bg-color);
+  background-color: var(--main-color);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 .field button:hover {
-  background-color: #016dcb;
+  background-color: var(--main-color);
 }
 .form-link {
   text-align: center;
@@ -89,10 +93,10 @@ form {
 .form-link a {
   font-size: 14px;
   font-weight: 400;
-  color: #232836;
+  color: var(--text-color);
 }
 .form a {
-  color: #1743e3;
+  color: var(--main-color);
   text-decoration: none;
 }
 .form-content a:hover {
@@ -103,7 +107,7 @@ form {
   height: 1px;
   width: 100%;
   margin: 30px 0;
-  background-color: #d4d4d4;
+  background-color: var(--bg-color);
 }
 .line::before {
   content: "O";
@@ -111,7 +115,7 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--bg-color);
   color: #8b8b8b;
   padding: 0 15px;
 }
@@ -121,19 +125,19 @@ form {
   justify-content: center;
 }
 a.facebook {
-  color: #fff;
+  color: var(--bg-color);
   background-color: #4267b4;
 }
 a.facebook .facebook-icon {
   height: 28px;
   width: 28px;
-  color: #0171d3;
+  color: var(--main-color);
   font-size: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 .facebook-icon,
 img.google-img {

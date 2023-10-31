@@ -15,25 +15,20 @@
         <header>Solicitud para servicio</header>
         <form action="#">
           <div class="field input-field">
-            <div class="field input-field">
-              <label for="nombre">Nombre del Cliente:</label>
-              <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <label for="telefono">Teléfono de Contacto:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-            <br><br>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-
-            <label for="modelo">Modelo del Automóvil:</label>
-            <input type="text" id="modelo" name="modelo" required>
-            <br><br>
-
-            <label for="tipo-servicio">Tipo de Servicio:</label>
-            <select id="tipo-servicio" name="tipo-servicio" required>
-              <option value="seleccionar">Seleccionar</option>
+            <input type="text" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="field input-field">
+            <input type="tel" placeholder="Numero de celular" required>
+          </div>
+          <div class="field input-field">
+            <input type="email" placeholder="Ingrese su correo Electronico" required>
+          </div>
+          <div class="field input-field">
+            <input type="text" placeholder="Modelo del Automovil" required>
+          </div>
+          <div class="field input-field">
+            <select name="tipo-servicio" id="tipo-servicio">
+              <option value="seleccionar">Tipo de servicio</option>
               <option value="cambio-aceite">Cambio de Aceite</option>
               <option value="frenos">Reparación de Frenos</option>
               <option value="cambio-neumaticos">Cambio de Neumáticos</option>
@@ -41,14 +36,25 @@
               <option value="mantenimiento-motor">Mantenimiento del Motor</option>
               <option value="suspension-direccion">Reparación de Suspensión y Dirección</option>
             </select>
-            <br><br>
-            <input type="submit" value="Solicitar">
+          </div>
+          <div class="field input-field">
+            <input type="date" placeholder="Fecha para el servicio" required>
+          </div>
+          <div class="field input-field">
+            <textarea placeholder="Peticiones" cols="55" rows="3"></textarea>
+          </div>
+          <div class="field button-field">
+            <button type="submit">Solicitar</button>
+          </div>
+          <!-- <label for="tipo-servicio">Tipo de Servicio:</label>
+          <select id="tipo-servicio" name="tipo-servicio" required>
+          </select>
+          <br><br> -->
+          <!-- <input type="submit" value="Solicitar"> -->
         </form>
       </div>
     </div>
   </section>
-
-
   <!-- Conexión para JS -->
   <Script src="../JS/servi.js"></Script>
 </body>
