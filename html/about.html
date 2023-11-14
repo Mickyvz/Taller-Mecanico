@@ -6,10 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca de </title>
   <link rel="stylesheet" href="../css/about.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <div class="heading">
+  <section class="header-home">
+    <nav>
+      <a href="../index.html" class="logo-menu">Taller <span>Mecanico</span></a>
+      <div class="nav-links" id="navLinks">
+        <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="#about">ACERCA DE</a></li>
+          <li><a href="#promociones">PROMOCIONES</a></li>
+          <li><a href="../index.html#parts">SERVICIOS</a></li>
+          <li><a href="../index.html#blog">BLOG</a></li>
+        </ul>
+      </div>
+      <!-- <i class='bx bx-menu' id="menu-icon"></i> -->
+      <!-- <i class="fa fa-bars"></i> -->
+    </nav>
+  </section>
+  <div class="heading" id="about">
     <h1>Sobre nosotros</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
@@ -17,12 +35,304 @@
     <img src="../img/acerca de.jpg">
     <div class="content">
       <h2>Lorem ipsum dolor sit amet.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facilis id consequuntur mollitia esse sunt,
-        rem excepturi fugiat illo eligendi, ad sequi? Quo labore fugit reprehenderit optio iure voluptatum velit, cum
-        numquam est earum asperiores adipisci!</p>
-      <button class="read-more-btn">Inicio</button>
+      <p>Bienvenido a "Nombre de taller mecanico", donde la pasión por los vehículos se une con la excelencia en el
+        servicio
+        automotriz.
+        Desde nuestra fundación, nos hemos comprometido a proporcionar a nuestros clientes una experiencia de calidad y
+        confianza en cada servicio que ofrecemos.</p>
+      <a href="../index.html" class="read-more-btn">Volver a Inicio</a>
     </div>
   </section>
+  <!-- Más información -->
+  <div class="mision">
+    <h1>Nuestra Misión</h1>
+    <p>Nuestra misión es ofrecer soluciones integrales para el cuidado y manetnimiento de tu vehículo. <br>Nos
+      esformzamos
+      por brindar un servicio confiable, profesional y orientado a superar las expectativas de <br>nuestros clientes.
+      <br>
+    </p>
+    <h1>Experiencia y profesionalismo</h1>
+    <p>Contamos con un equipo de mecánicos altamente cualificados y apasionados por su trabajo. <br> Nuestros tecnicos
+      poseen una amplia experiencia y están constantemente actualizándose para <br>mantenerse al día con las ultimas
+      tecnologías y avances en la industria automotriz.</p>
+    <h1>Comunidad y Valores</h1>
+    <p>Ademas de nuestro compromiso con los automóviles, valoramos nuestra participación en la comunidad. Nos esforzamos
+      por <br>apoyar e involucrarnos en iniciativas locales que promuevan la seguridad vial y la educación sobre el
+      cuidado del automóvil.</p>
+  </div>
+  <!-- Servicios -->
+  <div class="heading-parts">
+    <span>Contamos con todo tipo de servicio</span>
+    <h2>Nuestros servicios</h2>
+    <!-- <i class='bx bxs-star'>(6 Opiniones)</i> -->
+  </div>
+  <!-- Partes del container -->
+  <div class="parts-container container">
+    <!-- box 1 -->
+    <div class="box">
+      <img src="../img/card5.jpg">
+      <h3>Cambio de aceite</h3>
+      <span>$79.99</span>
+      <i class='bx bxs-star'>(6 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Drenaje del aceite usado:</strong> Se retira el tapón del cáracter para drenar el aceite viejo
+                y usado del motor.</li>
+              <li><strong>Sustitucion del filtro de aceite:</strong> Se retira y reemplaza el filtro de aceite. Este
+                filtro es escencial para atrapar impurezas y garantizar que el aceite nuevo pernamnezca limpio.</li>
+              <li><strong>Limpieza y revision:</strong> Se limpian y revisan el tapón de drenaje y la rosca para
+                asegurarse de que no haya residuos ni fugas.</li>
+              <li><strong>Añadir aceite nuevo:</strong> Se agrega el tipo y cantidad adecuada de aceite nuevo
+                recomendado
+                por el fabricante del vehículo.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- box 2 -->
+    <div class="box">
+      <img src="../img/card2.jpg">
+      <h3>Frenos</h3>
+      <span>$1,130.00</span>
+      <i class='bx bxs-star'>(6 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Inspección y cambio de pastillas y discos:</strong> Se debe revisar y reemplazar las pastillas
+                de freno cuando estén desgastadas, así como los discos si presentan signos de
+                desgaste o están dañados.
+              </li>
+              <li><strong>Líquido de frenos:</strong> Es crucial mantener niveles adecuados y cambiar el líquido de
+                frenos según las recomendaciones del fabricante para
+                garantizar un funcionamiento óptimo.</li>
+              <li><strong>Revisión del sistema:</strong> Se recomienda inspeccionar todo el sistema de frenos
+                periódicamente para detectar posibles fugas, problemas de presión o
+                desgaste.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- box 3 -->
+    <div class="box">
+      <img src="../img/card3.jpg">
+      <h3>Cambio de neumáticos</h3>
+      <span>$1,900.00</span>
+      <i class='bx bxs-star'>(6 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Desmontaje de los neumáticos viejos:</strong> Se levanta el vehículo y se desmontan las ruedas
+                existentes.
+              </li>
+              <li><strong>Inspección visual:</strong> Se examinan los neumáticos viejos en busca de desgaste, daños,
+                cortes o irregularidades en la banda de rodamiento.</li>
+              <li><strong>Montaje de neumáticos nuevos:</strong> Se colocan neumáticos nuevos en las llantas,
+                asegurándose de que estén alineados correctamente y se inflan según las
+                especificaciones del fabricante.
+              </li>
+              <li><strong>Balanceo:</strong> Se equilibran las ruedas para evitar vibraciones durante la conducción, lo
+                que se hace mediante el ajuste de contrapesos
+                en la llanta.
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- box 4 -->
+    <div class="box">
+      <img src="../img/about2.jpg">
+      <h3>Alineacion de ruedas</h3>
+      <span>$1,500.00</span>
+      <i class='bx bxs-star'>(6 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Inspección inicial:</strong> Se examinan las ruedas para evaluar si están correctamente
+                alineadas. Esto incluye verificar la posición de las ruedas
+                delanteras y traseras, así como el ángulo de inclinación, convergencia y avance.
+              </li>
+              <li><strong>Ajuste de ángulos:</strong>
+                <blockquote>
+              <li type="circle"><strong>Camber:</strong> Se refiere a la inclinación de las ruedas hacia adentro o hacia
+                afuera cuando
+                se ven desde el frente del vehículo. El
+                ajuste del ángulo de camber es importante para asegurar que la superficie de contacto del neumático sea
+                uniforme.</li>
+              <li type="circle"><strong>Caster:</strong> Es el ángulo de inclinación hacia adelante o hacia atrás de un
+                eje de
+                dirección, permitiendo estabilidad en la
+                dirección.</li>
+              <li type="circle"><strong>Toe:</strong> Se refiere a la dirección en la que apuntan los neumáticos cuando
+                se ven desde arriba. Un ajuste preciso del ángulo de
+                toe garantiza un desgaste uniforme de los neumáticos.</li>
+              </blockquote>
+              </li>
+              <li><strong>Ajuste de la dirección:</strong> Se corrigen los ángulos mencionados anteriormente,
+                generalmente a través de equipos especializados, para alinear las
+                ruedas de acuerdo con las especificaciones del fabricante.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- box 5 -->
+    <div class="box">
+      <img src="../img/card1.jpg">
+      <h3>Reparación y mantenimiento del motor</h3>
+      <span>$2,100.99</span>
+      <i class='bx bxs-star'>(6 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Cambio de aceite y filtro:</strong> Un mantenimiento regular del aceite es esencial para
+                lubricar las partes móviles del motor y prevenir el desgaste
+                prematuro. Se debe cambiar el filtro de aceite según las recomendaciones del fabricante.
+              </li>
+              <li><strong>Reemplazo del filtro de aire:</strong> Un filtro de aire limpio asegura que el motor reciba
+                una mezcla adecuada de aire y combustible. Se recomienda su
+                reemplazo según el intervalo de mantenimiento.</li>
+              <li><strong>Sistema de enfriamiento:</strong> Verificación del nivel y calidad del refrigerante, y
+                limpieza o reemplazo del radiador y mangueras según sea necesario.</li>
+              <li><strong>Bujías y cables de encendido:</strong> Inspección y reemplazo según las recomendaciones del
+                fabricante.
+              </li>
+              <li><strong>Rectificación del motor:</strong> En casos de desgaste severo, puede ser necesario rectificar
+                o reconstruir el motor para restaurar su funcionamiento.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- box 6 -->
+    <div class="box">
+      <img src="../img/card6.jpg">
+      <h3>Suspensión y dirección</h3>
+      <span>$2,100.99</span>
+      <i class='bx bxs-star'>(25 Opiniones)</i>
+      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-titlle">Ver detalles</span>
+            <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+              <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Amortiguadores y resortes:</strong> Los amortiguadores controlan el rebote y la oscilación de
+                las ruedas, mientras que los resortes proporcionan soporte y
+                absorben impactos.
+              </li>
+              <li><strong>Barras estabilizadoras:</strong> Ayudan a mantener la estabilidad del vehículo al reducir el
+                balanceo lateral durante las curvas.</li>
+              <li><strong>Buje de suspensión:</strong> Conecta diversas partes de la suspensión y permite el movimiento
+                controlado de las ruedas.</li>
+              <li><strong>Caja de dirección:</strong> Convierte el movimiento del volante en un movimiento lateral de
+                las ruedas.</li>
+              <li><strong>Brazos de dirección:</strong> Conectan la caja de dirección a las ruedas, dirigiendo el
+                vehículo.</li>
+              <li><strong>Junta universal:</strong> Permite la conexión entre diferentes partes del sistema de
+                dirección, especialmente en vehículos con dirección asistida.</li>
+              <li><strong>Bomba y fluido de dirección asistida:</strong> En vehículos con dirección asistida, la bomba y
+                el fluido ayudan a facilitar el giro del volante.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <section class="footer">
+    <div class="footer-container container">
+      <div class="footer-box">
+        <a href="#" class="logo">Taller <span>Mecánico</span></a>
+        <div class="social">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Página</h3>
+        <a href="#">Inicio</a>
+        <a href="#about">Acerca de</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#parts">Compras</a>
+        <a href="#blog">Blog</a>
+      </div>
+      <div class="footer-box">
+        <h3>Legal</h3>
+        <a href="#">Privacidad</a>
+        <a href="#">Política de reembolso</a>
+        <a href="#">Política de cookies</a>
+      </div>
+      <div class="footer-box">
+        <h3>Contactos</h3>
+        <p>Ciudad México</p>
+        <p>Chilpancingo Guerrero</p>
+        <p>Puebla</p>
+      </div>
+    </div>
+  </section>
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>&#169; Copyright by Miguel Alcaraz Vázquez | Mickyvz</p>
+  </div>
+
+  <!-- Link Script -->
+  <script src="../JS/about.js"></script>
 </body>
 
 </html>

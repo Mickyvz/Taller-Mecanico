@@ -15,7 +15,7 @@
   --bg-color: #fff;
 }
 .container {
-  height: 100vh;
+  height: 125vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -76,14 +76,26 @@ form {
   padding: 5px;
 }
 
-.field button {
+.field .btn-log {
   color: var(--bg-color);
-  background-color: var(--main-color);
-  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 10px 28px;
+  background: #0171e3;
+  border: 2px solid #0171e3;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  /* background-color: var(--main-color); */
+  transition: 0.5s;
+  animation-delay: 2s;
   cursor: pointer;
 }
-.field button:hover {
-  background-color: var(--main-color);
+.field .btn-log:hover {
+  background: transparent;
+  color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 .form-link {
   text-align: center;
@@ -107,7 +119,7 @@ form {
   height: 1px;
   width: 100%;
   margin: 30px 0;
-  background-color: var(--bg-color);
+  background-color: #232836;
 }
 .line::before {
   content: "O";

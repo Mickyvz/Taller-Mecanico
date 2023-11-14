@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
   <link rel="stylesheet" href="../css/serv.css">
+  <!-- CSS de Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 </head>
 
 <body>
@@ -35,13 +37,15 @@
               <option value="alineacion-ruedas">Alineación de Ruedas</option>
               <option value="mantenimiento-motor">Mantenimiento del Motor</option>
               <option value="suspension-direccion">Reparación de Suspensión y Dirección</option>
+              <option value="suspension-direccion">Otro</option>
             </select>
           </div>
+          <h4 class="date">Fecha para el servicio de su carro</h4>
           <div class="field input-field">
-            <input type="date" placeholder="Fecha para el servicio" required>
+            <input type="date" required>
           </div>
           <div class="field input-field">
-            <textarea placeholder="Peticiones" cols="55" rows="3"></textarea>
+            <textarea placeholder=" Recomendaciones" cols="55" rows="3"></textarea>
           </div>
           <div class="field button-field">
             <button type="submit">Solicitar</button>
@@ -57,6 +61,10 @@
   </section>
   <!-- Conexión para JS -->
   <Script src="../JS/servi.js"></Script>
+  <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js, y finalmente Bootstrap.js) -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
