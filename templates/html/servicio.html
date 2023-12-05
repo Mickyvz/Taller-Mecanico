@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
-  <link rel="stylesheet" href="../css/serv.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/serv.css')}}">
   <!-- CSS de Bootstrap -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 </head>
@@ -60,7 +60,7 @@
     </div>
   </section>
   <!-- Conexión para JS -->
-  <Script src="../JS/servi.js"></Script>
+  <script src="{{ url_for('static', filename = 'js/servi.js')}}"></script>
   <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js, y finalmente Bootstrap.js) -->
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

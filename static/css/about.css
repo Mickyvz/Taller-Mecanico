@@ -279,6 +279,7 @@ summary::webkit-details-marker {
 .parts-container .box .faq-container .faq-content {
   color: var(--text-color);
   padding: 0.2em 1em 1em 1em;
+  text-align: justify;
   font-size: 13px;
   /* font-weight: 300; */
   line-height: 1.5;

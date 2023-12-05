@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
-  <link rel="stylesheet" href="../css/style2.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style2.css')}}">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/eaa9640629.js" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
@@ -17,21 +16,22 @@
     <div class="form signup">
       <div class="form-content">
         <header>Registrarse</header>
-        <form action="#">
+        <form action="/register" method="post">
           <div class="field input-field">
-            <input type="text" placeholder="Ingrese su nombre" class="input" required>
+            <input type="text" id="name" name="name" placeholder=" Ingrese su nombre" class="input" required>
           </div>
           <div class="field input-field">
-            <input type="tel" placeholder="Numero de celular" class="input" required>
+            <input type="tel" id="tel" name="tel" placeholder=" Numero de celular" class="input" required>
           </div>
           <div class="field input-field">
-            <input type="email" placeholder="Correo Electronico" class="input" required>
+            <input type="email" id="email" name="email" placeholder="Correo Electronico" class="input" required>
           </div>
           <div class="field input-field">
-            <input type="password" placeholder="Contraseña" class="password" required>
+            <input type="password" id="passwrd" name="passwrd" placeholder="Contraseña" class="password" required>
           </div>
           <div class="field input-field">
-            <input type="password" placeholder="Contraseña" class="password" required>
+            <input type="password" id="rtpassword" name="rtpassword" placeholder="Escriba de nuevo su contraseña"
+              class="password" required>
             <i class='bx bx-hide eye-icon'></i>
           </div>
           <div class="field button-field">
@@ -51,7 +51,7 @@
       </div>
       <div class="media-options">
         <a href="#" class="field google">
-          <img src="../img/google.png" alt="" class="google-img">
+          <img src="{{ url_for('static', filename = 'img/google.png')}}" alt="" class="google-img">
           <span>Iniciar Sesion con Google</span>
         </a>
       </div>
@@ -64,7 +64,7 @@
       <div class="notification_progress"></div>
     </div> -->
   </section>
-  <script src="../JS/form.js"></script>
+  <script src="{{ url_for('static', filename = 'js/form.js')}}"></script>
 </body>
 
 </html>

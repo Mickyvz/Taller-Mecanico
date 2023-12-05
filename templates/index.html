@@ -9,7 +9,11 @@
   <!-- Link para BoxIcons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- Link para CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+  <!-- Link para Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
@@ -33,13 +37,13 @@
     <div class="home-contente">
       <h2>Taller Mecanico</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima veritatis libero quisquam odit nemo natus!</p>
-      <a href="html/login.html" class="hero-btn">Ingresar</a>
+      <a href="/verlogin" class="hero-btn">Ingresar</a>
     </div>
   </section>
   <!-- About -->
   <section class="about container" id="about">
     <div class="about-img">
-      <img src="img/about.jpg" alt="">
+      <img src="{{ url_for('static', filename = 'img/about.jpg')}}" alt="">
     </div>
     <div class="about-text">
       <span>Sobre nosotros</span>
@@ -54,7 +58,7 @@
         intervenciones mecánicas, todo con el objetivo común de mantener los vehículos en su mejor estado.</p>
       <!-- about bottom -->
       <span class="background">
-        <a href="html/about.html" class="btn" title="Learn">Leer más
+        <a href="/about" class="btn" title="Learn">Leer más
         </a>
       </span>
     </div>
@@ -80,7 +84,7 @@
     <div class="contenedor">
       <div class="card">
         <div class="img-box">
-          <img src="img/card1.jpg">
+          <img src="{{ url_for('static', filename = 'img/card1.jpg')}}">
         </div>
         <div class="content">
           <h2>Alineación de ruedas</h2>
@@ -88,12 +92,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore consectetur natus minus dolore
             consequatur harum labore ab quia excepturi?
           </p>
-          <a href="html/servicio.html" class="btn-pr">Adquiri ahora <br>($600)</a>
+          <a href="/promociones/alineacion-de-ruedas" class="btn-pr">Adquiri ahora <br>($600)</a>
         </div>
       </div>
       <div class="card">
         <div class="img-box">
-          <img src="img/card2.jpg">
+          <img src="{{ url_for('static', filename = 'img/card2.jpg')}}">
         </div>
         <div class="content">
           <h2>Cambio de neumáticos</h2>
@@ -101,12 +105,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore consectetur natus minus dolore
             consequatur harum labore ab quia excepturi?
           </p>
-          <a href="html/servicio.html" class="btn-pr">Adquirir ahora <br> ($850)</a>
+          <a href="/promociones/cambio-de-neumaticos" class="btn-pr">Adquirir ahora <br> ($850)</a>
         </div>
       </div>
       <div class="card">
         <div class="img-box">
-          <img src="img/card5.jpg">
+          <img src="{{ url_for('static', filename = 'img/card5.jpg')}}">
         </div>
         <div class="content">
           <h2>Cambio de aceite</h2>
@@ -114,7 +118,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore consectetur natus minus dolore
             consequatur harum labore ab quia excepturi?
           </p>
-          <a href="html/servicio.html" class="btn-pr">Adquiri ahora <br> ($1200)</a>
+          <a href="/promociones/cambio-de-aceite" class="btn-pr">Adquiri ahora <br> ($1200)</a>
         </div>
       </div>
     </div>
@@ -130,11 +134,11 @@
     <div class="parts-container container">
       <!-- Box 1 -->
       <div class="box">
-        <img src="img/card5.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/card5.jpg')}}" alt="">
         <h3>Cambio de aceite</h3>
-        <span>$79.99</span>
+        <span>$80.00</span>
         <i class='bx bxs-star'>(6 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <a href="/servicios/cambio-de-aceite" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -164,11 +168,11 @@
       </div>
       <!-- Box 2 -->
       <div class="box">
-        <img src="img/card2.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/card2.jpg')}}" alt="">
         <h3>Frenos</h3>
         <span>$1,130.00</span>
-        <i class='bx bxs-star'>(3 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <i class='bx bxs-star'>(9 Opiniones)</i>
+        <a href="/servicios/frenos" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -199,11 +203,11 @@
       </div>
       <!-- Box 3 -->
       <div class="box">
-        <img src="img/card3.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/card3.jpg')}}" alt="">
         <h3>Cambio de neumáticos</h3>
         <span>$1,900.00</span>
         <i class='bx bxs-star'>(6 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <a href="/servicios/cambio-de-neumaticos" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -215,17 +219,21 @@
             </summary>
             <div class="faq-content">
               <ul>
-                <li><strong>Inspección y cambio de pastillas y discos:</strong> Se debe revisar y reemplazar las
-                  pastillas
-                  de freno cuando estén desgastadas, así como los discos si presentan signos de
-                  desgaste o están dañados.
+                <li><strong>Desmontaje de los neumáticos viejos:</strong> Se levanta el vehículo y se desmontan las
+                  ruedas
+                  existentes.
                 </li>
-                <li><strong>Líquido de frenos:</strong> Es crucial mantener niveles adecuados y cambiar el líquido de
-                  frenos según las recomendaciones del fabricante para
-                  garantizar un funcionamiento óptimo.</li>
-                <li><strong>Revisión del sistema:</strong> Se recomienda inspeccionar todo el sistema de frenos
-                  periódicamente para detectar posibles fugas, problemas de presión o
-                  desgaste.</li>
+                <li><strong>Inspección visual:</strong> Se examinan los neumáticos viejos en busca de desgaste, daños,
+                  cortes o irregularidades en la banda de rodamiento.</li>
+                <li><strong>Montaje de neumáticos nuevos:</strong> Se colocan neumáticos nuevos en las llantas,
+                  asegurándose de que estén alineados correctamente y se inflan según las
+                  especificaciones del fabricante.
+                </li>
+                <li><strong>Balanceo:</strong> Se equilibran las ruedas para evitar vibraciones durante la conducción,
+                  lo
+                  que se hace mediante el ajuste de contrapesos
+                  en la llanta.
+                </li>
               </ul>
             </div>
           </details>
@@ -234,11 +242,11 @@
       </div>
       <!-- Box 4 -->
       <div class="box">
-        <img src="img/about2.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/about2.jpg')}}" alt="">
         <h3>Alineación de ruedas</h3>
         <span>$1,500.00</span>
         <i class='bx bxs-star'>(6 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <a href="/servicios/alineacion-de-ruedas" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -285,11 +293,11 @@
       </div>
       <!-- Box 5 -->
       <div class="box">
-        <img src="img/card1.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/card1.jpg')}}" alt="">
         <h3>Reparación y mantenimiento del motor</h3>
-        <span>$2,100.99</span>
-        <i class='bx bxs-star'>(6 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <span>$2,145.50</span>
+        <i class='bx bxs-star'>(17 Opiniones)</i>
+        <a href="/servicios/reparacion-y-mantenimiento-del-motor" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -324,11 +332,11 @@
       </div>
       <!-- Box 6 -->
       <div class="box">
-        <img src="img/card6.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/card6.jpg')}}" alt="">
         <h3>Suspensión y dirección</h3>
-        <span>$2,100.99</span>
-        <i class='bx bxs-star'>(6 Opiniones)</i>
-        <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+        <span>$7,100.20</span>
+        <i class='bx bxs-star'>(25 Opiniones)</i>
+        <a href="/servicios/suspesion-y-direccion" class="btn-buy">Pedir ahora</a>
         <div class="faq-container">
           <details>
             <summary>
@@ -378,7 +386,7 @@
     <div class="blog-container container">
       <!-- box 1 -->
       <div class="box">
-        <img src="img/blog.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/blog.jpg')}}" alt="">
         <span>Oct 10 2023</span>
         <h3>Como obtener nuestros servicios a buen precio</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste blanditiis, obcaecati dolor quo sint quaerat
@@ -388,7 +396,7 @@
       </div>
       <!-- box 2 -->
       <div class="box">
-        <img src="img/about2.jpg" alt="">
+        <img src="{{ url_for('static', filename = 'img/about2.jpg')}}" alt="">
         <span>Oct 20 2023</span>
         <h3>La importancia del mantenimiento de la suspensión</h3>
         <p>El mantenimiento de la suspensión de un automóvil es escencial para garantizar un viaje seguro y
@@ -401,7 +409,7 @@
       </div>
       <!-- box 3 -->
       <div class="box">
-        <img src="img/about3.jpg">
+        <img src="{{ url_for('static', filename = 'img/about3.jpg')}}">
         <span>Nov 10 2023</span>
         <h3>¿Qué tan importante es el cambio de aceite para mi vehículo?</h3>
         <p>El cambio regular de aceite es fundamental para el mantenimiento de su vehículo. Este proceso es clave para
@@ -453,7 +461,7 @@
     <p>&#169; Copyright by Miguel Alcaraz Vázquez | Mickyvz</p>
   </div>
   <!-- Link para JS -->
-  <script src="main.js"></script>
+  <script src="{{ url_for('static', filename = 'js/main.js')}}"></script>
 </body>
 
 </html>

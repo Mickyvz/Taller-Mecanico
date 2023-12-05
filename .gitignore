@@ -1,0 +1,12 @@
+# Exclusiones que se requieren
+#Excluir el entorno virtual
+venv/  
+# Excluir las variables de entorno
+.env
+
+# Excluir las carpetas de pycache
+_pycache_/
+# Compilados de python
+*.py[cod]
+# Las carpetas de testing
+.pytest_cache

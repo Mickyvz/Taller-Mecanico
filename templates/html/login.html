@@ -8,7 +8,7 @@
   <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style2.css')}}">
 </head>
 
 <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/link -->
@@ -18,12 +18,14 @@
     <div class="form login">
       <div class="form-content">
         <header>Ingresar cuenta</header>
-        <form action="#">
+        <form action="/login" method="post">
           <div class="field input-field">
-            <input type="email" placeholder="Correo Electronico" class="input">
+            <!-- <label for="email">Correo Electronico</label> -->
+            <input type="email" id="email" name="email" placeholder="Correo Electronico" class="input">
           </div>
           <div class="field input-field">
-            <input type="password" placeholder="Contraseña" class="password">
+            <!-- <label for="password">Contraseña</label> -->
+            <input type="password" id="password" name="password" placeholder="Contraseña" class="password">
             <i class='bx bx-hide eye-icon'></i>
           </div>
           <div class="form-link">
@@ -34,7 +36,7 @@
           </div>
         </form>
         <div class="form-link">
-          <span>ya tienes una cuenta? <a href="../html/signup.html" class="ingresar-link">Registrarse</a></span>
+          <span>ya tienes una cuenta? <a href="/registrar" class="ingresar-link">Registrarse</a></span>
         </div>
       </div>
       <div class="line"></div>
@@ -46,13 +48,13 @@
       </div>
       <div class="media-options">
         <a href="#" class="field google">
-          <img src="../img/google.png" alt="" class="google-img">
+          <img src="{{ url_for('static', filename = 'img/google.png')}}" alt="" class="google-img">
           <span>Iniciar Sesion con Google</span>
         </a>
       </div>
     </div>
   </section>
-  <script src="../JS/form.js"></script>
+  <script src="{{ url_for('static', filename = 'js/form.js')}}"></script>
 </body>
 
 </html>

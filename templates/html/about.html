@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca de </title>
-  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css')}}">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -32,7 +32,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
   <section class="about-us">
-    <img src="../img/acerca de.jpg">
+    <img src="{{ url_for('static', filename = 'img/acerca de.jpg')}}">
     <div class="content">
       <h2>Lorem ipsum dolor sit amet.</h2>
       <p>Bienvenido a "Nombre de taller mecanico", donde la pasión por los vehículos se une con la excelencia en el
@@ -40,7 +40,7 @@
         automotriz.
         Desde nuestra fundación, nos hemos comprometido a proporcionar a nuestros clientes una experiencia de calidad y
         confianza en cada servicio que ofrecemos.</p>
-      <a href="../index.html" class="read-more-btn">Volver a Inicio</a>
+      <a href="/" class="read-more-btn">Volver a Inicio</a>
     </div>
   </section>
   <!-- Más información -->
@@ -70,11 +70,11 @@
   <div class="parts-container container">
     <!-- box 1 -->
     <div class="box">
-      <img src="../img/card5.jpg">
+      <img src="{{ url_for('static', filename = 'img/card5.jpg')}}">
       <h3>Cambio de aceite</h3>
       <span>$79.99</span>
-      <i class='bx bxs-star'>(6 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <i class='bx bxs-star'>(5 Opiniones)</i>
+      <a href="/servicios/cambio-de-aceite" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
@@ -102,11 +102,11 @@
     </div>
     <!-- box 2 -->
     <div class="box">
-      <img src="../img/card2.jpg">
+      <img src="{{ url_for('static', filename = 'img/card2.jpg')}}">
       <h3>Frenos</h3>
       <span>$1,130.00</span>
-      <i class='bx bxs-star'>(6 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <i class='bx bxs-star'>(9 Opiniones)</i>
+      <a href="/servicios/frenos" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
@@ -135,11 +135,11 @@
     </div>
     <!-- box 3 -->
     <div class="box">
-      <img src="../img/card3.jpg">
+      <img src="{{ url_for('static', filename = 'img/card3.jpg')}}">
       <h3>Cambio de neumáticos</h3>
       <span>$1,900.00</span>
-      <i class='bx bxs-star'>(6 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <i class='bx bxs-star'>(5 Opiniones)</i>
+      <a href="/servicios/cambio-de-neumaticos" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
@@ -171,11 +171,11 @@
     </div>
     <!-- box 4 -->
     <div class="box">
-      <img src="../img/about2.jpg">
+      <img src="{{ url_for('static', filename = 'img/about2.jpg')}}">
       <h3>Alineacion de ruedas</h3>
       <span>$1,500.00</span>
       <i class='bx bxs-star'>(6 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <a href="/servicios/alineacion-de-ruedas" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
@@ -217,11 +217,11 @@
     </div>
     <!-- box 5 -->
     <div class="box">
-      <img src="../img/card1.jpg">
+      <img src="{{ url_for('static', filename = 'img/card1.jpg')}}">
       <h3>Reparación y mantenimiento del motor</h3>
-      <span>$2,100.99</span>
-      <i class='bx bxs-star'>(6 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <span>$2,145.50</span>
+      <i class='bx bxs-star'>(17 Opiniones)</i>
+      <a href="/servicios/reparacion-y-mantenimiento-del-motor" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
@@ -254,11 +254,11 @@
     </div>
     <!-- box 6 -->
     <div class="box">
-      <img src="../img/card6.jpg">
+      <img src="{{ url_for('static', filename = 'img/card6.jpg')}}">
       <h3>Suspensión y dirección</h3>
-      <span>$2,100.99</span>
+      <span>$7,100.20</span>
       <i class='bx bxs-star'>(25 Opiniones)</i>
-      <a href="../html/servicio.html" class="btn-buy">Pedir ahora</a>
+      <a href="/servicios/suspension-y-direccion" class="btn-buy">Pedir ahora</a>
       <div class="faq-container">
         <details>
           <summary>
